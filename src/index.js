@@ -1,12 +1,12 @@
-const express = require("express");
-const mongoose = require("mongoose");
+const express = require("express")
+const mongoose = require("mongoose")
+const todoRoutes = require("./routes/todoRoutes")
 const cors = require("cors")
 
 const PORT = 3030;
 const app = express();
 mongoose.set('strictQuery', true);
 
-const todoRoutes = require("./routes/todoRoutes")
 const connectionOptions = {
     useUnifiedTopology: true,
     useNewUrlParser: true
