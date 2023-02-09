@@ -1,6 +1,6 @@
 const express = require("express")
 const mongoose = require("mongoose")
-const todoRoutes = require("./routes/todoRoutes")
+const todoRoutes = require("./src/routes/todoRoutes")
 const cors = require("cors")
 
 const PORT = 3030;
