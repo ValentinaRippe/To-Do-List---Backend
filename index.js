@@ -15,7 +15,7 @@ const connectionOptions = {
 app.use(express.json());
 app.use(cors())
 
-mongoose.connect("mongodb://localhost/todolist", connectionOptions);
+mongoose.connect("mongodb+srv://Valentina:f.Y89dZqmT4GYFm@mongodb101.tkldh7i.mongodb.net/?retryWrites=true&w=majority", connectionOptions);
 const connection = mongoose.connection
 
 connection.once('open', () => {
